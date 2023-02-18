@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
+import Image from 'react-bootstrap/Image'
 import axios from "axios";
 import Common from "./common";
 const BASE_URL = Common.API_URL;
@@ -62,7 +63,18 @@ export default class report extends Component {
         <Navbar bg="primary" variant="dark">
           <Container>
             <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์</Navbar.Brand>
-            <div  style={{ color: 'white' }}>รหัสนักศึกษา : 65130896 | Kasemsan Kenutum POM+ (main)</div>
+            <div  style={{ color: 'white' }}> 
+              <Image src="images/pom+.png" 
+                style={{
+                  width: 70,
+                  height: 70,
+                  boxShadow: '1px 2px 9px #FFF',
+                  margin: '5px',
+                  padding: '1px',
+                }}
+                roundedCircle 
+              /> รหัสนักศึกษา : 65130896 | Kasemsan Kenutum POM+
+            </div>
           </Container>
         </Navbar>
         <Container>
